@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { 
   PlusCircle, 
   History, 
@@ -410,6 +411,7 @@ const App: React.FC = () => {
           }} 
           currentConfig={config}
         />
+        <Analytics />
       </div>
     );
   }
@@ -739,6 +741,7 @@ const App: React.FC = () => {
           <p>© 2026 NicTrack - Personal Nicotine Journey Tracker</p>
         </footer>
       </div>
+      <Analytics />
     </div>
   );
 };
